@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 4%;
+}
+
+img {
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 12.5%;
+}
+
+#carouselContainer {
+    max-width: 75%;
+    position: relative;
+    /* overflow: hidden; */
+    margin: auto;
+    transition: transform 0.4s ease-in-out;
+}
+
+.photoSlide {
+    display: inline;
+    width: 25%;
+    animation: 5s slider infinite;
+}
+
+#prev {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
+
+.slideDot {
+    margin: 0.25%;
+}
+
+#siteDetails {
+    margin: auto;
+    width: 50%;
+}
+
+#mainNarrative {
+    margin: auto;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 200px;
+    overflow-y: scroll;
+}
