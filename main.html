@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun kid activities</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Photo Carousel -->
+    <div id="carouselContainer">
+        <h3 id="carouselHeader">Featured activities</h3>
+        <div class="photoSlide">
+            <button id="prev">&#10094; Prev</button>
+            <img src="images\Trampoline_4.png" alt="Trampoline">
+            <img src="images\Zoo_2.jpg" alt="Zoo">
+            <img src="images\Inflatable_Park_2.jpg" alt="Inflatable Park">
+            <img src="images\Park_3.jpg" alt="Park">
+            <button id="next">Next &#10095;</button>
+        </div>
+        <br />
+        <button class="slideDot" id="slideDot1">&#9679;</button>
+        <button class="slideDot" id="slideDot2">&#9679;</button>
+        <button class="slideDot" id="slideDot3">&#9679;</button>
+        <button class="slideDot" id="slideDot4">&#9679;</button>
+    </div>
+
+    <div id="titleDiv">
+        <h1 id="titleHeader">Fun parks for kids around the Carolinas</h1>
+    </div>
+
+    <!-- Navigation Pane -->
+    <div id="search">
+        <h4 id="searchTitle">What kind of place are you looking for?</h4>
+        
+        <table id="activitySearch">
+            <tr>
+                <td class="searchBy">Exercise</td>
+                <td>Educational</td>
+                <td>Safe for little ones</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><a href="sitePage1.html">Trampoline Park</a></td>
+                <td><a href="sitePage2.html">Zoo</a></td>
+                <td><a href="sitePage3.html">Inflatable Park</a></td>
+                <td><a href="sitePage4.html">Fountain Park</a></td>
+            </tr>
+        </table>
+    </div>
+    
+        <!-- <Main site narrative -->
+            <div id="mainNarrative">
+                <p>
+                    This site is dedicated to finding and featuring fun activities to do with kids around the Carolinas.
+                    Explore activities based on a category or just start browsing for the perfect place to take your little one.
+                    If you know of a place that you'd like to add, put it in the form at the bottom. Enjoy!
+                </p>
+        
+                <p>
+                    Mollit culpa ullamco esse nulla ex officia irure occaecat consectetur minim. Laborum elit consequat elit reprehenderit
+                     duis reprehenderit. Labore proident do esse culpa officia nostrud magna velit amet.
+                </p>
+        
+                <p>
+                    Ea fugiat in occaecat aliqua. Do non ullamco tempor labore qui proident proident ullamco amet culpa fugiat incididunt
+                     officia magna. Sint dolore minim labore excepteur nisi laboris aute deserunt sunt. Minim Lorem qui occaecat consequat
+                     laborum velit sunt quis labore. Ea id nostrud ea non sint sint excepteur voluptate laborum magna reprehenderit. Sint
+                     consequat incididunt nulla amet enim occaecat anim quis aliquip eiusmod.
+                </p>
+
+                <p>
+                    Ea fugiat in occaecat aliqua. Do non ullamco tempor labore qui proident proident ullamco amet culpa fugiat incididunt
+                     officia magna. Sint dolore minim labore excepteur nisi laboris aute deserunt sunt. Minim Lorem qui occaecat consequat
+                     laborum velit sunt quis labore. Ea id nostrud ea non sint sint excepteur voluptate laborum magna reprehenderit. Sint
+                     consequat incididunt nulla amet enim occaecat anim quis aliquip eiusmod.
+                </p>
+                
+                <p>
+                    Dolor anim tempor magna culpa. Esse eu sint aute in anim eiusmod. Culpa elit nulla ex dolor sit. Adipisicing laboris minim
+                     sunt labore laboris in in ipsum eu labore nisi. Ex do veniam aute aliquip dolore. Sit aute aliqua minim proident excepteur.
+                </p>
+                
+                <p>
+                    Cupidatat consectetur minim id mollit mollit cupidatat eu reprehenderit fugiat aliquip eu anim pariatur. Do aliquip voluptate
+                     est eiusmod. Adipisicing laborum esse minim est id nostrud dolore laborum commodo ea velit. Incididunt proident sunt consectetur
+                     aliquip voluptate anim aliquip labore Lorem fugiat et excepteur nulla. Ex pariatur quis nostrud cillum dolore officia occaecat
+                     eu occaecat commodo laborum mollit pariatur sunt. Sit in excepteur et et cupidatat ex esse eiusmod deserunt deserunt. Id anim
+                     ipsum sunt ea sint cillum eu eiusmod minim.
+                </p>
+                
+                <p>
+                    Lorem magna nulla laboris occaecat consectetur. Excepteur sit ad amet incididunt pariatur enim eiusmod ex elit anim. Dolor reprehenderit anim
+                     velit veniam consequat commodo consectetur est irure enim eiusmod ad.
+                </p>
+
+            </div>
+            <br /><br />
+        
+    <!-- Form to add a new place -->
+    <div id="newPlace">
+        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="GET">
+            <fieldset>
+                <legend>Request a place!</legend>
+                <label>Activity Title
+                    <input type="text" id="newActivityTitle" name="newActivityTitle" size="40" maxlength="100">
+                </label>
+                <br /><br />Activity Location<br />
+                <label>Street Address
+                    <input type="text" id="newActivityAddress" name="newActivityAddress", size="50" maxlength="200">
+                </label>
+                <br />
+                <label>City
+                    <input type="text" id="newActivityCity" name="newActivityCity", size="50" maxlength="200">
+                </label>
+                <br />
+                <label>State
+                    <input type="text" id="newActivityState" name="newActivityState", size="10" maxlength="20"></label>
+                    <label>&emsp; Zip Code <input type="text" id="newActivityZip" name="newActivityZip", size="5" maxlength="10"></label>
+                <br /><br />
+                What is the typical cost for this place?<br />
+                <input type="radio" class="newActivityCost" name="newActivityCost">Free - $25
+                <input type="radio" class="newActivityCost" name="newActivityCost">$25 - $50
+                <input type="radio" class="newActivityCost" name="newActivityCost">$50 - $100
+                <input type="radio" class="newActivityCost" name="newActivityCost">$100+
+                <br /><br />
+                <label>What makes this activity great?<br />
+                    <textarea id="newActivityDesc"></textarea>
+                </label>
+                <br /><br />
+                Attach a photo:<br />
+                <input type="file" id="newActivityPhoto">
+                <br /><br /><br />
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <!-- JS file -->
+    <script src="script.js"></script>
+    <script src="pageScript.js"></script>
+</body>
+</html>
