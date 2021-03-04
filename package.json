@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "CS 290 Project",
+  "main": "script.js",
+  "scripts": {
+    "test": "T"
+  },
+  "author": "Jeremy Vernon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "handlebars": "^4.7.7",
+    "node": "^15.10.0"
+  }
+}
