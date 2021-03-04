@@ -3,6 +3,7 @@ const app = express();
 const handlebars = require('express-handlebars').create({defalutLayout:'main'});
 
 // Renders pages
+app.use(express.static('public'));
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', process.argv[2]);
